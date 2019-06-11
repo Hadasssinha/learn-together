@@ -1,0 +1,45 @@
+*{margin:0;}
+body{
+    
+}
+header{
+    padding: 50px;
+    background-color: darkorange;
+    text-align: center;
+    font-size: 100px;
+}
+nav{
+
+    text-align: right;
+    margin: 5px;
+    padding: 20px;
+}
+
+a{
+    padding: 10px;
+    margin:5px;
+}
+tutor {
+    color: darkorange;
+}
+pupil{
+    color: seagreen;
+}
+.logo{
+    height: 45px;
+    width: 45px;
+    float: left;
+    margin:3px;
+        
+}
+
+.solution article {
+    margin: 25px;   
+    float: left;
+    width: 45%;
+}
+.solution article h1 {
+    font-size: 35px;
+    
+}
+
