@@ -124,6 +124,7 @@ pupil {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 10%;
 }
 .tech-template-container {
   background-color: #f4f4f4;
@@ -139,7 +140,7 @@ pupil {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   #tech {
     width: 95%;
   }
@@ -152,8 +153,8 @@ pupil {
     align-items: center;
   }
   .tech-template {
-    height: auto;
-    margin: 20px;
+    height: 100vh;
+    margin: 0;
   }
   .tech-template-container {
     width: 100%;
@@ -161,17 +162,6 @@ pupil {
     row-gap: 10px;
   }
 }
-@media screen and (max-width: 1000px) {
-  #tech {
-    width: 95%;
-  }
-  .tech-template-container {
-    width: 100%;
-    grid-template: auto auto auto / 100%;
-    row-gap: 10px;
-  }
-}
-
 .tech-template-container a {
   font-size: 19px;
   padding: 0;
