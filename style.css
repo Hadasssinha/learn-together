@@ -120,7 +120,7 @@ pupil {
 }
 
 .tech-template {
-  height: 100vh;
+  height: auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -131,7 +131,7 @@ pupil {
   width: 80%;
   margin: 0 auto;
   display: grid;
-  grid-template: 50vh / 1fr 2fr 3fr;
+  grid-template: auto / 1fr 2fr 3fr;
   column-gap: 25px;
   justify-content: center;
   align-items: center;
@@ -144,7 +144,7 @@ pupil {
     width: 95%;
   }
   #tech-header {
-      height: auto;
+    height: auto;
   }
   #tech-header ul {
     flex-direction: column;
@@ -152,7 +152,8 @@ pupil {
     align-items: center;
   }
   .tech-template {
-      height: 100vh;
+    height: auto;
+    margin: 20px;
   }
   .tech-template-container {
     width: 100%;
