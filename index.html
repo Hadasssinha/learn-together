@@ -1,49 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
     <title>Learn Together</title>
-</head>
-<body>
-    
-    <section>
-        <img class="logo" src="img/logo.png">
-        <nav>
-            <a>PROBLEMA</a>
-            <a>SOLUÇÃO</a>
-            <a>TECNOLOGIAS</a>
-        </nav>
-        <header>
-            . 
-        </header>
-        <section class="solution">
-            <article> 
-                <h1>Somos a plataforma que promove conexão entre pessoas interessadas em ensinar e aprender ao mesmo tempo.</h1>
-            </article>
-            <article>
-                <h2><tutor>Tutor</tutor></h2>
-                <p>
-                    Existem diversos tipos de estudante, um deles é o que chamamos de <tutor>Tutor</tutor>, aquele que aprende ensinando.
-                    Quanto mais ensina mais aprende. Podemos encontrar ele em fóruns, grupos e comunidades virtuais. 
-                    Ele está sempre procurando maneiras de ensinar o que sabe ou está aprendendo.
-                </p>
-                <h2><pupil>Pupil</pupil></h2>
-                <p>
-                    Outro perfil de estudante, muito comum, é o <pupil>Pupil</pupil>.
-                    Este está sempre atento ao que seus colegas e tutores podem oferecer de conhecimento. 
-                    Ele adora fazer perguntas, elas fazem com que ele tenha cada vez mais domínio do assunto.
-                </p>
-                <h2><pupil>Learn</pupil> <tutor>Together</tutor></h2>
-                <p>O <pupil>Learn</pupil> <tutor>Together</tutor> é a platforma que une esses dois estudantes para melhorar o aprendizado.
-                Quando surgir uma duvida durante o estudo, o aplicativo fará uma pesquisa e lhe aprensentará usuários capazes de te ajudar 
-            e aprender te ensinando. </p>
 
-                
-
-            </article>
-        </section>
-        <section></section>
-    </section>
-</body>
+    <link
+      href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap"
+      rel="stylesheet"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <article>
+      <img class="logo" src="img/logo.png" />
+      <nav id="nav">
+        <a>PROBLEMA</a>
+        <a>SOLUÇÃO</a>
+        <a href="#tech">TECNOLOGIAS</a>
+      </nav>
+      <header>
+        .
+      </header>
+      <section id="solutionSec" class="solution">
+        <div class="box">
+          <h1>
+            Somos a plataforma que promove conexão entre pessoas interessadas em
+            ensinar e aprender ao mesmo tempo.
+          </h1>
+        </div>
+        <div class="box">
+          <h2><tutor>Tutor</tutor></h2>
+          <p>
+            Existem diversos tipos de estudante, um deles é o que chamamos de
+            <tutor>Tutor</tutor>, aquele que aprende ensinando. Quanto mais
+            ensina mais aprende. Podemos encontrar ele em fóruns, grupos e
+            comunidades virtuais. Ele está sempre procurando maneiras de ensinar
+            o que sabe ou está aprendendo.
+          </p>
+          <h2><pupil>Pupil</pupil></h2>
+          <p>
+            Outro perfil de estudante, muito comum, é o <pupil>Pupil</pupil>.
+            Este está sempre atento ao que seus colegas e tutores podem oferecer
+            de conhecimento. Ele adora fazer perguntas, elas fazem com que ele
+            tenha cada vez mais domínio do assunto.
+          </p>
+          <h2><pupil>Learn</pupil> <tutor>Together</tutor></h2>
+          <p>
+            O <pupil>Learn</pupil> <tutor>Together</tutor> é a platforma que une
+            esses dois estudantes para melhorar o aprendizado. Quando surgir uma
+            duvida durante o estudo, o aplicativo fará uma pesquisa e lhe
+            aprensentará usuários capazes de te ajudar e aprender te ensinando.
+          </p>
+        </div>
+      </section>
+      <section id="tech">
+        <div id="tech-header">
+          <h2>Tecnologias que o Learn Together usa</h2>
+          <ul>
+            <li>
+              <a href="#ionic">
+                <p>
+                  Front-end:
+                </p>
+                <img src="img/ionic.png" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="#firebase">
+                <p>
+                  BaaS:
+                </p>
+                <img src="img/firebase.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div id="ionic" class="tech-template">
+          <div
+            id="ionic-container"
+            class="tech-template-container tech-template-ionic"
+          >
+            <img class="logo ionic-logo" src="img/ionic-logo.png" alt="" />
+            <h2>Ionic Framework</h2>
+            <div>
+              <p>
+                Um framework que facilita o desenvolvimento de apps móveis
+                multi-plataforma.
+              </p>
+              <p>
+                Com apenas um código-fonte (HTML, CSS e JavaScript), o Ionic
+                gera Progressive Web Apps e aplicativos nativos para iOS e
+                Android.
+              </p>
+              <p>
+                <a href="https://ionicframework.com/" target="_blank">
+                  Saiba mais sobre o Ionic
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="firebase" class="tech-template">
+          <div class="tech-template-container tech-template-firebase">
+            <img class="logo" src="img/firebase-logo.png" alt="" />
+            <h2>Firebase</h2>
+            <div>
+              <p>
+                O Firebase possui bibliotecas e API's que conectam o código de
+                front-end com os servidores do Google, que gerenciam todo o
+                back-end.
+              </p>
+              <p>
+                Ou seja, toda a infraestrutura de servidores é disponibilizada
+                como um serviço pelo Firebase (Backend-as-a-Service).
+              </p>
+              <p>
+                <a href="https://firebase.google.com/?hl=pt-BR" target="_blank">
+                  Saiba mais sobre o Firebase</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+  </body>
 </html>

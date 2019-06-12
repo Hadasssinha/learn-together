@@ -1,45 +1,199 @@
-*{margin:0;}
-body{
-    
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
-header{
-    padding: 50px;
-    background-color: darkorange;
-    text-align: center;
-    font-size: 100px;
+html {
+  scroll-behavior: smooth;
 }
-nav{
+section {
+  clear: both;
+}
+header {
+  padding: 50px;
+  background-color: darkorange;
+  text-align: center;
+  font-size: 100px;
+}
+nav {
+  text-align: right;
+  margin: 5px;
+  padding: 20px;
+}
 
-    text-align: right;
-    margin: 5px;
-    padding: 20px;
+nav a {
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  text-decoration: none;
 }
-
-a{
-    padding: 10px;
-    margin:5px;
+nav a:any-link {
+  color: #212121;
 }
 tutor {
-    color: darkorange;
+  color: darkorange;
 }
-pupil{
-    color: seagreen;
+pupil {
+  color: seagreen;
 }
-.logo{
-    height: 45px;
-    width: 45px;
-    float: left;
-    margin:3px;
-        
-}
-
-.solution article {
-    margin: 25px;   
-    float: left;
-    width: 45%;
-}
-.solution article h1 {
-    font-size: 35px;
-    
+.logo {
+  height: 45px;
+  width: 45px;
+  float: left;
+  margin: 3px;
 }
 
+.solution .box {
+  margin: 25px;
+  float: left;
+  width: 45%;
+}
+.solution .box h1 {
+  font-size: 35px;
+}
+
+/******************************
+*   TECNOLOGIAS
+*   (IGOR)
+*******************************/
+#tech {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+  font-family: "Didact Gothic";
+}
+
+#tech h2 {
+  font-size: 47px;
+  line-height: 54px;
+}
+#tech p {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+}
+
+#tech-header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: solid 1px;
+  border-top-color: rgba(0, 0, 0, 0.1);
+  border-bottom: solid 1px;
+  border-bottom-color: rgba(0, 0, 0, 0.1);
+}
+
+#tech-header ul {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  list-style-type: none;
+}
+
+#tech-header li a {
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  transition-property: opacity;
+  transition-duration: 400ms;
+  text-decoration: none;
+}
+
+#tech-header li a:any-link {
+  cursor: pointer;
+  letter-spacing: 0.2em;
+  font-weight: 500;
+  font-size: 23px;
+  color: #212121;
+}
+
+#tech-header li a:hover {
+  opacity: 1;
+}
+
+#tech-header li a img {
+  height: 150px;
+}
+
+.tech-template {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.tech-template-container {
+  background-color: #f4f4f4;
+  border-radius: 7px;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template: 50vh / 1fr 2fr 3fr;
+  column-gap: 25px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 700px) {
+  #tech {
+    width: 95%;
+  }
+  #tech-header ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .tech-template-container {
+    width: 100%;
+    grid-template: auto auto auto / 100%;
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  #tech {
+    width: 95%;
+  }
+  .tech-template-container {
+    width: 100%;
+    grid-template: auto auto auto / 100%;
+    row-gap: 10px;
+  }
+}
+
+.tech-template-container a {
+  font-size: 19px;
+  padding: 0;
+  font-weight: 800;
+  margin: 0;
+}
+.tech-template-container .logo {
+  width: 128px;
+  height: 128px;
+}
+
+.tech-template-ionic {
+  box-shadow: 1px 1px 20px 0px rgb(98, 104, 234);
+  background-color: rgba(98, 104, 234, 0.1);
+}
+.ionic-logo {
+  animation-name: rotate-logo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.tech-template-firebase {
+  box-shadow: 1px 1px 20px 2px rgb(251, 192, 45);
+  background-color: rgba(251, 192, 45, 0.1);
+}
+
+@keyframes rotate-logo {
+  to {
+    transform: rotate(360deg);
+  }
+}
