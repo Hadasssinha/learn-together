@@ -143,10 +143,16 @@ pupil {
   #tech {
     width: 95%;
   }
+  #tech-header {
+      height: 100vh;
+  }
   #tech-header ul {
     flex-direction: column;
     width: 100%;
     align-items: center;
+  }
+  .tech-template {
+      height: 100vh;
   }
   .tech-template-container {
     width: 100%;
