@@ -146,14 +146,6 @@ pupil {
   #tech-header {
       height: auto;
   }
-  #tech h2 {
-      font-size: 84px;
-      line-height: 92px; 
-  }
-  #tech p {
-      font-size: 67px;
-      line-height: 75px;
-  }
   #tech-header ul {
     flex-direction: column;
     width: 100%;
