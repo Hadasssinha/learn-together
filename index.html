@@ -5,60 +5,87 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fredoka+One|Kalam&display=swap"
+      rel="stylesheet"
+    />
     <title>Learn Together</title>
 
     <link
       href="https://fonts.googleapis.com/css?family=Didact+Gothic&display=swap"
       rel="stylesheet"
     />
-    <script src="script.js"></script>
   </head>
   <body>
     <article>
-      <img class="logo" src="img/logo.png" />
-      <nav id="nav">
-        <a>PROBLEMA</a>
-        <a>SOLUÇÃO</a>
-        <a href="#tech">TECNOLOGIAS</a>
-      </nav>
-      <header>
-        .
-      </header>
-      <section id="solutionSec" class="solution">
-        <div class="box">
-          <h1>
-            Somos a plataforma que promove conexão entre pessoas interessadas em
-            ensinar e aprender ao mesmo tempo.
-          </h1>
+      <div id="nav-menu">
+        <img class="logo" src="img/logo.png" />
+        <nav id="nav">
+          <a>PROBLEMA</a>
+          <a href="#solution">SOLUÇÃO</a>
+          <a href="#tech">TECNOLOGIAS</a>
+        </nav>
+      </div>
+      <header id="had">
+        <div class="had-image">
+          <img src="img/hominho.png" alt="" />
         </div>
-        <div class="box">
-          <h2><tutor>Tutor</tutor></h2>
-          <p>
-            Existem diversos tipos de estudante, um deles é o que chamamos de
-            <tutor>Tutor</tutor>, aquele que aprende ensinando. Quanto mais
-            ensina mais aprende. Podemos encontrar ele em fóruns, grupos e
-            comunidades virtuais. Ele está sempre procurando maneiras de ensinar
-            o que sabe ou está aprendendo.
-          </p>
-          <h2><pupil>Pupil</pupil></h2>
-          <p>
-            Outro perfil de estudante, muito comum, é o <pupil>Pupil</pupil>.
-            Este está sempre atento ao que seus colegas e tutores podem oferecer
-            de conhecimento. Ele adora fazer perguntas, elas fazem com que ele
-            tenha cada vez mais domínio do assunto.
-          </p>
-          <h2><pupil>Learn</pupil> <tutor>Together</tutor></h2>
-          <p>
-            O <pupil>Learn</pupil> <tutor>Together</tutor> é a platforma que une
-            esses dois estudantes para melhorar o aprendizado. Quando surgir uma
-            duvida durante o estudo, o aplicativo fará uma pesquisa e lhe
-            aprensentará usuários capazes de te ajudar e aprender te ensinando.
-          </p>
+        <div class="had-divona">
+          <div class="had-fraseEfeito">
+            <h2 id="fe1">Learn Together</h2>
+            <strong>
+              <p id="fe2">
+                Faça parte de uma comunidade que compartilha conhecimento.
+              </p>
+              <p>
+                Muitos estudantes buscam sites para tirar suas dúvidas. Para
+                isso, existem pessoas dispostas a ensinar.
+              </p>
+            </strong>
+          </div>
+        </div>
+      </header>
+      <section id="solution">
+        <div id="container-pupilo-tutor">
+          <div class="box-pupilo-tutor" id="box-tutor">
+            <img src="img/2.png" />
+            <h2><tutor>Tutor</tutor></h2>
+            <p>
+              Existem diversos tipos de estudante, um deles é o que chamamos de
+              <tutor><strong>Tutor</strong></tutor
+              >, aquele que <strong>aprende ensinando</strong>. Quanto mais
+              ensina, mais aprende. Podemos encontrar ele em fóruns, grupos e
+              comunidades virtuais. Ele está sempre procurando maneiras de
+              ensinar o que sabe ou está aprendendo.
+            </p>
+          </div>
+          <div class="box-pupilo-tutor">
+            <img src="img/1.png" />
+            <h2><pupilo>Pupilo</pupilo></h2>
+            <p>
+              Outro perfil de estudante, muito comum, é o
+              <pupilo><strong>pupilo</strong></pupilo
+              >. Este está <strong>sempre atento</strong> ao que seus colegas e
+              tutores podem oferecer de conhecimento. Ele
+              <strong>adora fazer perguntas</strong>, pois elas fazem com que
+              tenha cada vez mais domínio do assunto.
+            </p>
+          </div>
+          <div class="box-pupilo-tutor">
+            <img src="img/logo.png" />
+            <h2><pupilo>Learn</pupilo> <tutor>Together</tutor></h2>
+            <p>
+              O <pupilo>Learn</pupilo> <tutor>Together</tutor> é a plataforma
+              que une esses dois estudantes para melhorar o aprendizado. Quando
+              surgir uma duvida durante o estudo, o aplicativo fará uma pesquisa
+              e lhe aprensentará usuários capazes de te ajudar e aprender te
+              ensinando.
+            </p>
+          </div>
         </div>
       </section>
       <section id="tech">
         <div id="tech-header">
-          <h2>Tecnologias que o Learn Together usa</h2>
           <ul>
             <li>
               <a href="#ionic">
@@ -78,54 +105,73 @@
             </li>
           </ul>
         </div>
-        <div id="ionic" class="tech-template">
-          <div
-            id="ionic-container"
-            class="tech-template-container tech-template-ionic"
-          >
-            <img class="logo ionic-logo" src="img/ionic-logo.png" alt="" />
-            <h2>Ionic Framework</h2>
-            <div>
-              <p>
-                Um framework que facilita o desenvolvimento de apps móveis
-                multi-plataforma.
-              </p>
-              <p>
-                Com apenas um código-fonte (HTML, CSS e JavaScript), o Ionic
-                gera Progressive Web Apps e aplicativos nativos para iOS e
-                Android.
-              </p>
-              <p>
-                <a href="https://ionicframework.com/" target="_blank">
-                  Saiba mais sobre o Ionic
-                </a>
-              </p>
+        <div id="tech-description">
+          <div id="ionic" class="tech-template">
+            <div
+              id="ionic-container"
+              class="tech-template-container tech-template-ionic"
+            >
+              <img class="logo ionic-logo" src="img/ionic-logo.png" alt="" />
+              <h2>Ionic Framework</h2>
+              <div>
+                <p>
+                  Um framework que facilita o desenvolvimento de apps móveis
+                  multi-plataforma.
+                </p>
+                <p>
+                  Com apenas um código-fonte (HTML, CSS e JavaScript), o Ionic
+                  gera Progressive Web Apps e aplicativos nativos para iOS e
+                  Android.
+                </p>
+                <p>
+                  <a href="https://ionicframework.com/" target="_blank">
+                    Saiba mais sobre o Ionic
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div id="firebase" class="tech-template">
-          <div class="tech-template-container tech-template-firebase">
-            <img class="logo" src="img/firebase-logo.png" alt="" />
-            <h2>Firebase</h2>
-            <div>
-              <p>
-                O Firebase possui bibliotecas e API's que conectam o código de
-                front-end com os servidores do Google, que gerenciam todo o
-                back-end.
-              </p>
-              <p>
-                Ou seja, toda a infraestrutura de servidores é disponibilizada
-                como um serviço pelo Firebase (Backend-as-a-Service).
-              </p>
-              <p>
-                <a href="https://firebase.google.com/?hl=pt-BR" target="_blank">
-                  Saiba mais sobre o Firebase</a
-                >
-              </p>
+          <div id="firebase" class="tech-template">
+            <div class="tech-template-container tech-template-firebase">
+              <img class="logo" src="img/firebase-logo.png" alt="" />
+              <h2>Firebase</h2>
+              <div>
+                <p>
+                  O Firebase possui bibliotecas e API's que conectam o código de
+                  front-end com os servidores do Google, que gerenciam todo o
+                  back-end.
+                </p>
+                <p>
+                  Ou seja, toda a infraestrutura de servidores é disponibilizada
+                  como um serviço pelo Firebase (Backend-as-a-Service).
+                </p>
+                <p>
+                  <a
+                    href="https://firebase.google.com/?hl=pt-BR"
+                    target="_blank"
+                  >
+                    Saiba mais sobre o Firebase</a
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section id="counter-sec">
+        <div>
+          <h2>Lançamento do App</h2>
+          <span id="dayCounter"></span>
+          <br />
+          <span id="hourCounter"></span>
+          <span id="minuteCounter"></span>
+          <span id="secondCounter"></span>
+        </div>
+      </section>
     </article>
+    <footer>
+      <strong>Desenvolvido por <a href="">Learn Together</a> - 2019</strong>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

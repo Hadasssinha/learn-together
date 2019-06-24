@@ -4,15 +4,59 @@
 }
 html {
   scroll-behavior: smooth;
+  font-family: "Didact Gothic", sans-serif;
 }
 section {
   clear: both;
 }
+#banner {
+  width: 100%;
+  margin: 0%;
+}
 header {
-  padding: 50px;
-  background-color: darkorange;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  color: hsl(146, 50%, 26%);
   text-align: center;
-  font-size: 100px;
+  padding-bottom: 50px;
+  margin-bottom: 40px;
+  background: rgb(255, 145, 77);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 145, 77, 1) 65%,
+    hsl(23, 100%, 65%) 100%
+  );
+}
+#fe1 {
+  text-shadow: 2px 2px 1px #212121;
+  font-size: 3em;
+  /* color: #2abb88; */
+  color: white;
+  font-family: "Fredoka One";
+}
+header .had-image {
+  flex: 1;
+}
+
+header .had-image img {
+  width: 100%;
+}
+
+.had-divona {
+  flex: 2.7;
+  margin: 10px;
+  text-align: center;
+}
+
+.had-divona h2 {
+  margin: 45px 0;
+  font-size: 2.4em;
+}
+
+.had-fraseEfeito {
+  font-size: 25px;
 }
 nav {
   text-align: right;
@@ -25,30 +69,54 @@ nav a {
   margin: 5px;
   cursor: pointer;
   text-decoration: none;
+  color: white;
 }
 nav a:any-link {
-  color: #212121;
+  color: white;
 }
 tutor {
   color: darkorange;
 }
-pupil {
+pupilo {
   color: seagreen;
+}
+
+#nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2abb88;
 }
 .logo {
   height: 45px;
   width: 45px;
-  float: left;
   margin: 3px;
+  margin-left: 15px;
 }
 
-.solution .box {
-  margin: 25px;
-  float: left;
-  width: 45%;
+#container-pupilo-tutor {
+  display: flex;
+  justify-content: space-evenly;
 }
-.solution .box h1 {
+
+#container-pupilo-tutor p {
+  font-size: 1.19em;
+  font-weight: 500;
+}
+
+#solution {
+}
+#solution div h1 {
   font-size: 35px;
+}
+.box-pupilo-tutor {
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+.box-pupilo-tutor img {
+  height: 128px;
+  width: 128px;
 }
 
 /******************************
@@ -56,9 +124,7 @@ pupil {
 *   (IGOR)
 *******************************/
 #tech {
-  width: 90%;
-  margin: 0 auto;
-  margin-top: 30px;
+  width: 100%;
   font-family: "Didact Gothic";
 }
 
@@ -101,6 +167,7 @@ pupil {
   transition-property: opacity;
   transition-duration: 400ms;
   text-decoration: none;
+  height: 250px;
 }
 
 #tech-header li a:any-link {
@@ -116,7 +183,19 @@ pupil {
 }
 
 #tech-header li a img {
-  height: 150px;
+  height: 250px;
+}
+
+#tech-header p {
+  text-transform: uppercase;
+  font-size: 1.1em;
+  font-weight: 600;
+  opacity: 0.6;
+}
+
+#tech-description {
+  background-color: #2abb88;
+  padding: 50px 0;
 }
 
 .tech-template {
@@ -140,7 +219,7 @@ pupil {
   box-sizing: border-box;
 }
 
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   #tech {
     width: 95%;
   }
@@ -161,7 +240,7 @@ pupil {
     grid-template: auto auto auto / 100%;
     row-gap: 10px;
   }
-}
+} */
 .tech-template-container a {
   font-size: 19px;
   padding: 0;
@@ -174,8 +253,9 @@ pupil {
 }
 
 .tech-template-ionic {
-  box-shadow: 1px 1px 20px 0px rgb(98, 104, 234);
-  background-color: rgba(98, 104, 234, 0.1);
+  box-shadow: 1px 1px 40px 0px rgb(98, 104, 234);
+  /* background-color: rgba(98, 104, 234, 0.1); */
+  background-color: white;
 }
 .ionic-logo {
   animation-name: rotate-logo;
@@ -185,12 +265,69 @@ pupil {
 }
 
 .tech-template-firebase {
-  box-shadow: 1px 1px 20px 2px rgb(251, 192, 45);
-  background-color: rgba(251, 192, 45, 0.1);
+  box-shadow: 1px 1px 40px 2px rgb(251, 192, 45);
+  /* background-color: rgba(251, 192, 45, 0.1); */
+  background-color: white;
 }
 
 @keyframes rotate-logo {
   to {
     transform: rotate(360deg);
   }
+}
+
+#counter-sec {
+  font-size: 1.9em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #2abb88;
+  padding-bottom: 40px;
+}
+
+#counter-sec > div {
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgb(255, 145, 77);
+  color: white;
+  text-shadow: 1px 1px 1px #212121;
+  box-shadow: 1px 1px 10px #212121;
+}
+
+#dayCounter {
+  font-size: 2.3em;
+  color: #2abb88;
+  text-shadow: 1px 1px 1px #212121;
+}
+
+#hourCounter,
+#minuteCounter,
+#secondCounter {
+  font-size: 1em;
+  color: #212121;
+  text-shadow: 1px 1px 1px #212121;
+}
+
+footer {
+  font-size: 1.2em;
+  border-top: solid 1px #21212109;
+  background-color: #212121;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer a {
+  font-family: "Fredoka One";
+  color: rgb(255, 145, 77);
+  font-size: 1.4em;
+  font-weight: 400;
+  margin: 0 5px;
+}
+
+footer a:any-link {
+  text-decoration: none;
 }
