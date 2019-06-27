@@ -58,6 +58,9 @@ header .had-image img {
 .had-fraseEfeito {
   font-size: 25px;
 }
+.had-fraseEfeito p {
+  margin: 5px 0;
+}
 nav {
   text-align: right;
   margin: 5px;
