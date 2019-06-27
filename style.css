@@ -139,15 +139,16 @@ pupilo {
 }
 
 #tech-header {
-  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  border-top: solid 1px;
+  /* border-top: solid 1px;
   border-top-color: rgba(0, 0, 0, 0.1);
   border-bottom: solid 1px;
-  border-bottom-color: rgba(0, 0, 0, 0.1);
+  border-bottom-color: rgba(0, 0, 0, 0.1); */
+  padding: 70px 0;
+  margin-top: 80px;
 }
 
 #tech-header ul {
@@ -163,7 +164,6 @@ pupilo {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 30px;
   transition-property: opacity;
   transition-duration: 400ms;
   text-decoration: none;
@@ -195,7 +195,7 @@ pupilo {
 
 #tech-description {
   background-color: #2abb88;
-  padding: 50px 0;
+  padding: 70px 0;
 }
 
 .tech-template {
@@ -203,44 +203,23 @@ pupilo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 10%;
+  padding: 40px 0;
 }
 .tech-template-container {
   background-color: #f4f4f4;
   border-radius: 7px;
   width: 80%;
+  min-height: 40vh;
   margin: 0 auto;
   display: grid;
   grid-template: auto / 1fr 2fr 3fr;
   column-gap: 25px;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  padding: 20px 20px;
   box-sizing: border-box;
 }
 
-/* @media screen and (max-width: 1000px) {
-  #tech {
-    width: 95%;
-  }
-  #tech-header {
-    height: auto;
-  }
-  #tech-header ul {
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-  }
-  .tech-template {
-    min-height: 100vh;
-    margin-top: 20px;
-  }
-  .tech-template-container {
-    width: 100%;
-    grid-template: auto auto auto / 100%;
-    row-gap: 10px;
-  }
-} */
 .tech-template-container a {
   font-size: 19px;
   padding: 0;
@@ -253,7 +232,7 @@ pupilo {
 }
 
 .tech-template-ionic {
-  box-shadow: 1px 1px 40px 0px rgb(98, 104, 234);
+  box-shadow: 1px 1px 40px rgb(98, 104, 234);
   /* background-color: rgba(98, 104, 234, 0.1); */
   background-color: white;
 }
@@ -265,7 +244,7 @@ pupilo {
 }
 
 .tech-template-firebase {
-  box-shadow: 1px 1px 40px 2px rgb(251, 192, 45);
+  box-shadow: 1px 1px 40px rgb(251, 192, 45);
   /* background-color: rgba(251, 192, 45, 0.1); */
   background-color: white;
 }
@@ -330,4 +309,106 @@ footer a {
 
 footer a:any-link {
   text-decoration: none;
+}
+
+/* Popup box BEGIN */
+.popup{
+  background:rgba(0,0,0,.4);
+  cursor:pointer;
+  display:none;
+  height:100%;
+  position:fixed;
+  text-align:center;
+  top:0;
+  width:100%;
+  z-index:10000;
+}
+.popup .helper{
+  display:inline-block;
+  height:100%;
+  vertical-align:middle;
+}
+.popup > div {
+  background-color: #fff;
+  box-shadow: 10px 10px 60px #555;
+  display: inline-block;
+  height: auto;
+  max-width: 551px;
+  min-height: 100px;
+  vertical-align: middle;
+  width: 60%;
+  position: relative;
+  border-radius: 8px;
+  padding: 15px 5%;
+  z-index: 11111;
+}
+.popupCloseButton {
+  background-color: #fff;
+  border: 3px solid #999;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  font-family: arial;
+  font-weight: bold;
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 25px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+.popupCloseButton:hover {
+  background-color: #ccc;
+}
+.trigger_popup_fricc {
+  cursor: pointer;
+  font-size: 20px;
+  margin: 20px;
+  display: inline-block;
+  font-weight: bold;
+}
+/* Popup box BEGIN */
+#popupContainer {
+  background: black;
+  color: white;
+  padding: 60px;
+}
+.popupCloseButton{
+  color: black;
+  font-size: 10px;
+}
+#popupContainer p {
+  margin: 20px 0;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+#popupContainer label {
+  font-size: 22px;
+  text-transform: capitalize;
+  display: block;
+  text-align: left;
+  margin: 15px 0;
+}
+
+#popupContainer input[type="email"] {
+  display: block;
+  width: 100%;
+  line-height: 1.4em;
+  font-size: 18px;
+  border: solid 1px #212121;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#popupContainer button {
+  width: 100%;
+  line-height: 2.2em;
+  font-size: 32px;
+  border: solid 1px #212121;
+  border-radius: 5px;
+  background: rgb(255, 145, 77);
+  color: black;
 }
