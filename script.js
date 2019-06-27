@@ -5,6 +5,15 @@ var mouseX = 0;
 var mouseY = 0;
 var popupOpened = false;
 
+function subscribe() {
+  const email = document.getElementById("Email");
+  if(email.value) {
+    popupOpened = true;
+    const popup = document.getElementById("popup");
+    popup.style['display'] = "none";  
+  }
+}
+
 document.addEventListener("mousemove", ev => {
   mouseX = ev.clientX;
   mouseY = ev.clientY;
@@ -61,7 +70,7 @@ function setTime() {
   const now = new Date().getTime();
   const countdown = launchDate - now;
 
-  dayEl.innerHTML = Math.floor(countdown / (1000 * 60 * 60 * 24)) + "dias ";
+  dayEl.innerHTML = Math.floor(countdown / (1000 * 60 * 60 * 24)) + " dias ";
   hourEl.innerHTML =
     Math.floor((countdown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)) + "h ";
   minuteEl.innerHTML =

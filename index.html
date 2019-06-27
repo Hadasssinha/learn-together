@@ -34,12 +34,11 @@
           <div class="had-fraseEfeito">
             <h2 id="fe1">Learn Together</h2>
             <strong>
+              <p>
+                Aprenda com quem quer ensinar. Ensine para quem quer aprender.
+              </p>
               <p id="fe2">
                 Faça parte de uma comunidade que compartilha conhecimento.
-              </p>
-              <p>
-                Muitos estudantes buscam sites para tirar suas dúvidas. Para
-                isso, existem pessoas dispostas a ensinar.
               </p>
             </strong>
           </div>
@@ -77,8 +76,8 @@
             <p>
               O <pupilo>Learn</pupilo> <tutor>Together</tutor> é a plataforma
               que une esses dois estudantes para melhorar o aprendizado. Quando
-              surgir uma duvida durante o estudo, o aplicativo fará uma pesquisa
-              e lhe aprensentará usuários capazes de te ajudar e aprender te
+              surgir uma dúvida durante o estudo, o aplicativo fará uma pesquisa
+              e lhe apresentará usuários capazes de te ajudar e aprender te
               ensinando.
             </p>
           </div>
@@ -98,7 +97,7 @@
             <li>
               <a href="#firebase">
                 <p>
-                  BaaS:
+                  Backend-as-a-Service:
                 </p>
                 <img src="img/firebase.png" alt="" />
               </a>
@@ -168,6 +167,63 @@
           <span id="secondCounter"></span>
         </div>
       </section>
+      <section id="team-section">
+        <h2>Desenvolvedores</h2>
+        <div id="team">
+          <div id="hadassa" class="member">
+            <div class="member-header">
+              <div id="hadassa-img" class="member-img"></div>
+            </div>
+            <div class="member-description">
+              <p class="member-name"><strong>Hadassa, a Chefona</strong></p>
+              Aposentou-se da carreira esportiva no JIF's por estiramento no
+              quadríceps. Agora faz show no chuveiro. Nos tempos livres é garota
+              de programa (Java... por favor!).
+            </div>
+          </div>
+          <div id="henrique" class="member">
+            <div class="member-header">
+              <div id="henrique-img" class="member-img"></div>
+            </div>
+            <div class="member-description">
+              <p class="member-name">
+                <strong>Henrique, @ Cheerleader</strong>
+              </p>
+              Dançarino de quadrilha nas temporadas de São João. Cheerleader no
+              resto da temporada. Está se aventurando no time de vôlei do IFB.
+            </div>
+          </div>
+          <div id="lissa" class="member">
+            <div class="member-header">
+              <div id="lissa-img" class="member-img"></div>
+            </div>
+            <div class="member-description">
+              <p class="member-name">
+                <strong>Lissa, a Docinho de Coco</strong>
+              </p>
+              Faz programa junto com a Hadassa (não só em Java... com Ionic
+              também!). Diretamente do Piauí, chegou para abalar Brasília com
+              seu jeitinho <del>fofinho</del>... <del>meigo</del>...
+              <del>gentil</del>... <strong>perfeccionista</strong> e
+              <strong>criativa</strong> de ser.
+            </div>
+          </div>
+          <div id="igor" class="member">
+            <div class="member-header">
+              <div id="igor-img" class="member-img"></div>
+            </div>
+            <div class="member-description">
+              <strong class="member-name">Igor, o Estagiário</strong>
+              <p>
+                Iniciante na área de programação. Percebe-se que já tem um
+                talento. Cantor de sertanejo nas horas vagas. Sonha em conhecer
+                Gustavo Lima. (Faz programa com a Hadassa e Lissa. Talvez não
+                envolva Java e Ionic.)
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </article>
     <footer>
       <strong>Desenvolvido por <a href="">Learn Together</a> - 2019</strong>
@@ -178,13 +234,11 @@
       <div id="popupContainer">
         <div id="closePopup" class="popupCloseButton">X</div>
         <p>Fique por dentro do lançamento</p>
-        <form action="">
-          <p>
-            <label for="Email">E-mail</label>
-            <input type="email" name="Email" id="Email">
-          </p>
-          <button>Inscreva-se Agora </button>
-        </form>
+        <p>
+          <label for="Email">E-mail</label>
+          <input type="email" name="Email" id="Email" />
+        </p>
+        <button onclick="subscribe();">INSCREVA-SE AGORA</button>
       </div>
     </div>
 

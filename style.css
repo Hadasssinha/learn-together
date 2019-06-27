@@ -143,10 +143,6 @@ pupilo {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  /* border-top: solid 1px;
-  border-top-color: rgba(0, 0, 0, 0.1);
-  border-bottom: solid 1px;
-  border-bottom-color: rgba(0, 0, 0, 0.1); */
   padding: 70px 0;
   margin-top: 80px;
 }
@@ -156,6 +152,10 @@ pupilo {
   justify-content: center;
   align-items: stretch;
   list-style-type: none;
+}
+
+#tech-header ul li {
+  margin: 0 15px;
 }
 
 #tech-header li a {
@@ -195,7 +195,7 @@ pupilo {
 
 #tech-description {
   background-color: #2abb88;
-  padding: 70px 0;
+  /* padding: 70px 0; */
 }
 
 .tech-template {
@@ -262,7 +262,7 @@ pupilo {
   align-items: center;
   flex-direction: column;
   background-color: #2abb88;
-  padding-bottom: 40px;
+  padding: 70px;
 }
 
 #counter-sec > div {
@@ -312,21 +312,21 @@ footer a:any-link {
 }
 
 /* Popup box BEGIN */
-.popup{
-  background:rgba(0,0,0,.4);
-  cursor:pointer;
-  display:none;
-  height:100%;
-  position:fixed;
-  text-align:center;
-  top:0;
-  width:100%;
-  z-index:10000;
+.popup {
+  background: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 }
-.popup .helper{
-  display:inline-block;
-  height:100%;
-  vertical-align:middle;
+.popup .helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .popup > div {
   background-color: #fff;
@@ -375,7 +375,7 @@ footer a:any-link {
   color: white;
   padding: 60px;
 }
-.popupCloseButton{
+.popupCloseButton {
   color: black;
   font-size: 10px;
 }
@@ -411,4 +411,67 @@ footer a:any-link {
   border-radius: 5px;
   background: rgb(255, 145, 77);
   color: black;
+}
+/**
+*   TEAM SECTION
+*/
+#team-section {
+  background: white;
+  text-align: center;
+  color: #2abb88;
+  text-shadow: 1px 1px 1px black;
+  font-size: 1.2em;
+}
+#team-section h2 {
+  font-size: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#team {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#team .member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  color: black;
+  text-shadow: 0 0 0;
+  margin: 10px;
+  width: 50%;
+}
+#team .member .member-description {
+  text-align: start;
+  padding-left: 35px;
+}
+#team .member .member-name {
+  font-size: 23px;
+}
+#team .member-img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+#hadassa-img {
+  background: url("img/hadassa.jpg");
+  background-size: cover;
+  background-position-y: -20px;
+}
+#henrique-img {
+  background: url("img/henrique.jpeg");
+  background-size: cover;
+}
+#lissa-img {
+  background: url("img/lissa-2.jpg");
+  background-size: cover;
+}
+#igor-img {
+  background: url("img/igor.jpg");
+  background-size: cover;
+  background-position-x: -40px;
+  transform: rotate(90deg);
 }
