@@ -18,7 +18,7 @@ document.addEventListener("mousemove", ev => {
   mouseX = ev.clientX;
   mouseY = ev.clientY;
 
-  if (mouseY < 60 && !popupOpened) {
+  if (mouseY < 10 && !popupOpened) {
     popupOpened = true;
 
     const popup = document.getElementById("popup");

@@ -2,6 +2,16 @@
   margin: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('FredokaOne-Regular.ttf');
+  src: url('FredokaOne-Regular.ttf')  format('truetype');
+}
+@font-face {
+  font-family: 'Didact Gothic';
+  src: url('DidactGothic-Regular.ttf');
+  src: url('DidactGothic-Regular.ttf')  format('truetype');
+}
 html {
   scroll-behavior: smooth;
   font-family: "Didact Gothic", sans-serif;
